@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/card_sa5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0.3"
+        android:clickable="true"
+        android:onClick="onSuperAwokenClick"
+        android:tag="2"
+        app:layout_constraintEnd_toStartOf="@+id/card_sa6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_sa4"
+        app:layout_constraintTop_toBottomOf="@+id/card_super_awoken_label"
+        app:srcCompat="@drawable/awoken_redeemkiller" />
+
+    <ImageView
+        android:id="@+id/card_sa6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0.3"
+        android:clickable="true"
+        android:onClick="onSuperAwokenClick"
+        android:tag="2"
+        app:layout_constraintEnd_toStartOf="@+id/card_sa7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_sa5"
+        app:layout_constraintTop_toBottomOf="@+id/card_super_awoken_label"
+        app:srcCompat="@drawable/awoken_redeemkiller" />
+
+    <ImageView
+        android:id="@+id/card_sa7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0.3"
+        android:clickable="true"
+        android:onClick="onSuperAwokenClick"
+        android:tag="2"
+        app:layout_constraintEnd_toStartOf="@+id/card_sa8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_sa6"
+        app:layout_constraintTop_toBottomOf="@+id/card_super_awoken_label"
+        app:srcCompat="@drawable/awoken_redeemkiller" />
+
+    <ImageView
+        android:id="@+id/card_sa8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0.3"
+        android:clickable="true"
+        android:onClick="onSuperAwokenClick"
+        android:tag="2"
+        app:layout_constraintEnd_toStartOf="@+id/card_sa9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_sa7"
+        app:layout_constraintTop_toBottomOf="@+id/card_super_awoken_label"
+        app:srcCompat="@drawable/awoken_redeemkiller" />
+
+    <ImageView
+        android:id="@+id/card_sa9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0.3"
+        android:clickable="true"
+        android:onClick="onSuperAwokenClick"
+        android:tag="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_sa8"
+        app:layout_constraintTop_toBottomOf="@+id/card_super_awoken_label"
+        app:srcCompat="@drawable/awoken_redeemkiller" />
+
+    <ImageView
+        android:id="@+id/card_thumbnail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onIconClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blank_card" />
+
+    <TextView
+        android:id="@+id/card_hp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/control_border"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/card_thumbnail"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="HP: 99999" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="206dp" />
+
+    <TextView
+        android:id="@+id/card_atk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/control_border"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/card_thumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/card_hp"
+        tools:text="ATK: 99999" />
+
+    <TextView
+        android:id="@+id/card_rcv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/control_border"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/card_thumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/card_atk"
+        tools:text="RCV: 9999" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/control_border"
+        android:text="+"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/control_border"
+        android:text="+"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/card_atk"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/control_border"
+        android:text="+"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/name_level"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/card_type3"
+        app:layout_constraintTop_toBottomOf="@+id/card_thumbnail" />
+
+    <TextView
+        android:id="@+id/awoken_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Awoken Skills:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_type1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.58880776" />
+
+    <ImageView
+        android:id="@+id/card_awoken0"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onAwokenClick"
+        android:tag="0"
+        app:layout_constraintEnd_toStartOf="@+id/card_awoken1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/awoken_label"
+        app:srcCompat="@drawable/awoken_sadtama" />
+
+    <ImageView
+        android:id="@+id/card_awoken1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onAwokenClick"
+        android:tag="1"
+        app:layout_constraintEnd_toStartOf="@+id/card_awoken2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_awoken0"
+        app:layout_constraintTop_toBottomOf="@+id/awoken_label"
+        app:srcCompat="@drawable/awoken_godkiller" />
+
+    <ImageView
+        android:id="@+id/card_awoken2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onAwokenClick"
+        android:tag="2"
+        app:layout_constraintEnd_toStartOf="@+id/card_awoken3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_awoken1"
+        app:layout_constraintTop_toBottomOf="@+id/awoken_label"
+        app:srcCompat="@drawable/awoken_dragonkiller" />
+
+    <ImageView
+        android:id="@+id/card_awoken3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onAwokenClick"
+        android:tag="3"
+        app:layout_constraintEnd_toStartOf="@+id/card_awoken4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_awoken2"
+        app:layout_constraintTop_toBottomOf="@+id/awoken_label"
+        app:srcCompat="@drawable/awoken_devilkiller" />
+
+    <ImageView
+        android:id="@+id/card_awoken4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onAwokenClick"
+        android:tag="4"
+        app:layout_constraintEnd_toStartOf="@+id/card_awoken5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_awoken3"
+        app:layout_constraintTop_toBottomOf="@+id/awoken_label"
+        app:srcCompat="@drawable/awoken_machinekiller" />
+
+    <ImageView
+        android:id="@+id/card_awoken5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onAwokenClick"
+        android:tag="5"
+        app:layout_constraintEnd_toStartOf="@+id/card_awoken6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_awoken4"
+        app:layout_constraintTop_toBottomOf="@+id/awoken_label"
+        app:srcCompat="@drawable/awoken_balancedkiller" />
+
+    <ImageView
+        android:id="@+id/card_awoken6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onAwokenClick"
+        android:tag="6"
+        app:layout_constraintEnd_toStartOf="@+id/card_awoken7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_awoken5"
+        app:layout_constraintTop_toBottomOf="@+id/awoken_label"
+        app:srcCompat="@drawable/awoken_attackerkiller" />
+
+    <ImageView
+        android:id="@+id/card_awoken7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onAwokenClick"
+        android:tag="7"
+        app:layout_constraintEnd_toStartOf="@+id/card_awoken8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_awoken6"
+        app:layout_constraintTop_toBottomOf="@+id/awoken_label"
+        app:srcCompat="@drawable/awoken_physicalkiller" />
+
+    <ImageView
+        android:id="@+id/card_awoken8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onAwokenClick"
+        android:tag="8"
+        app:layout_constraintEnd_toStartOf="@+id/card_awoken9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_awoken7"
+        app:layout_constraintTop_toBottomOf="@+id/awoken_label"
+        app:srcCompat="@drawable/awoken_healerkiller" />
+
+    <ImageView
+        android:id="@+id/card_awoken9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onAwokenClick"
+        android:tag="9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_awoken8"
+        app:layout_constraintTop_toBottomOf="@+id/awoken_label"
+        app:srcCompat="@drawable/awoken_superresistbind" />
+
+    <TextView
+        android:id="@+id/card_skill_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/name_skilllevel"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_inherit_thumbnail_small" />
+
+    <TextView
+        android:id="@+id/card_active_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="This Is A Cool Skill Name"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_skill_label" />
+
+    <TextView
+        android:id="@+id/card_active_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="I don't know what this skill does but it's really op and everything and just makes everything die tbh and this is really long"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_active_name" />
+
+    <TextView
+        android:id="@+id/latent_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/name_latents"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_sa1"
+        tools:text="@string/name_latents" />
+
+    <ImageView
+        android:id="@+id/card_latent1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onLatentSlotClick"
+        android:tag="0"
+        app:layout_constraintEnd_toStartOf="@+id/card_latent2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/latent_label"
+        app:srcCompat="@drawable/latent_none" />
+
+    <ImageView
+        android:id="@+id/card_latent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onLatentSlotClick"
+        android:tag="1"
+        app:layout_constraintEnd_toStartOf="@+id/card_latent3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_latent1"
+        app:layout_constraintTop_toBottomOf="@+id/latent_label"
+        app:srcCompat="@drawable/latent_none" />
+
+    <ImageView
+        android:id="@+id/card_latent3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onLatentSlotClick"
+        android:tag="2"
+        app:layout_constraintEnd_toStartOf="@+id/card_latent4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_latent2"
+        app:layout_constraintTop_toBottomOf="@+id/latent_label"
+        app:srcCompat="@drawable/latent_none" />
+
+    <ImageView
+        android:id="@+id/card_latent4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onLatentSlotClick"
+        android:tag="3"
+        app:layout_constraintEnd_toStartOf="@+id/card_latent5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_latent3"
+        app:layout_constraintTop_toBottomOf="@+id/latent_label"
+        app:srcCompat="@drawable/latent_none" />
+
+    <ImageView
+        android:id="@+id/card_latent5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onLatentSlotClick"
+        android:tag="4"
+        app:layout_constraintEnd_toStartOf="@+id/card_latent6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_latent4"
+        app:layout_constraintTop_toBottomOf="@+id/latent_label"
+        app:srcCompat="@drawable/latent_none" />
+
+    <ImageView
+        android:id="@+id/card_latent6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:onClick="onLatentSlotClick"
+        android:tag="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_latent5"
+        app:layout_constraintTop_toBottomOf="@+id/latent_label"
+        app:srcCompat="@drawable/latent_none" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/name_assist"
+        app:layout_constraintStart_toEndOf="@+id/card_hp_plus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/card_inherit_thumbnail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onAssistIconClick"
+        app:layout_constraintStart_toEndOf="@+id/card_hp_plus"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:srcCompat="@drawable/blank_card" />
+
+    <ImageView
+        android:id="@+id/card_type1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_thumbnail"
+        app:srcCompat="@drawable/type_balanced" />
+
+    <ImageView
+        android:id="@+id/card_type2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/card_type1"
+        app:layout_constraintTop_toBottomOf="@+id/card_thumbnail"
+        app:srcCompat="@drawable/type_god" />
+
+    <ImageView
+        android:id="@+id/card_type3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/card_type2"
+        app:layout_constraintTop_toBottomOf="@+id/card_thumbnail"
+        app:srcCompat="@drawable/type_devil" />
+
+    <TextView
+        android:id="@+id/card_leader_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="This is a really cool Leader Skill"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_active_description_inherit" />
+
+    <TextView
+        android:id="@+id/card_leader_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="So DMeta thinks she's d meta doesn't she? well she better look out for this leader skill because it makes yusuke look like a crying little baby. Double 50% shields, 4x hp, and a revolutionary match 7 damage booster all make this card truly the greatest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_leader_name" />
+
+    <TextView
+        android:id="@+id/card_super_awoken_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/name_superawoken"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_awoken0" />
+
+    <ImageView
+        android:id="@+id/card_sa1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:onClick="onSuperAwokenClick"
+        android:tag="0"
+        app:layout_constraintEnd_toStartOf="@+id/card_sa2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_super_awoken_label"
+        app:srcCompat="@drawable/awoken_awokenkiller" />
+
+    <ImageView
+        android:id="@+id/card_sa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0.3"
+        android:clickable="true"
+        android:onClick="onSuperAwokenClick"
+        android:tag="1"
+        app:layout_constraintEnd_toStartOf="@+id/card_sa3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_sa1"
+        app:layout_constraintTop_toBottomOf="@+id/card_super_awoken_label"
+        app:srcCompat="@drawable/awoken_evokiller" />
+
+    <ImageView
+        android:id="@+id/card_sa3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0.3"
+        android:clickable="true"
+        android:onClick="onSuperAwokenClick"
+        android:tag="2"
+        app:layout_constraintEnd_toStartOf="@+id/card_sa4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_sa2"
+        app:layout_constraintTop_toBottomOf="@+id/card_super_awoken_label"
+        app:srcCompat="@drawable/awoken_redeemkiller" />
+
+    <ImageView
+        android:id="@+id/card_sa4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="0.3"
+        android:clickable="true"
+        android:onClick="onSuperAwokenClick"
+        android:tag="2"
+        app:layout_constraintEnd_toStartOf="@+id/card_sa5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_sa3"
+        app:layout_constraintTop_toBottomOf="@+id/card_super_awoken_label"
+        app:srcCompat="@drawable/awoken_redeemkiller" />
+
+    <TextView
+        android:id="@+id/equip_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/name_equipawokens"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_latent1" />
+
+    <ImageView
+        android:id="@+id/card_inherit_thumbnail_small"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_equip1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equip_label"
+        app:srcCompat="@drawable/blank_card" />
+
+    <ImageView
+        android:id="@+id/card_equip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_equip2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_inherit_thumbnail_small"
+        app:layout_constraintTop_toBottomOf="@+id/equip_label"
+        app:srcCompat="@drawable/awoken_equip" />
+
+    <ImageView
+        android:id="@+id/card_equip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_equip3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_equip1"
+        app:layout_constraintTop_toBottomOf="@+id/equip_label"
+        app:srcCompat="@drawable/awoken_godkiller" />
+
+    <ImageView
+        android:id="@+id/card_equip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_equip4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_equip2"
+        app:layout_constraintTop_toBottomOf="@+id/equip_label"
+        app:srcCompat="@drawable/awoken_dragonkiller" />
+
+    <ImageView
+        android:id="@+id/card_equip4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_equip5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_equip3"
+        app:layout_constraintTop_toBottomOf="@+id/equip_label"
+        app:srcCompat="@drawable/awoken_devilkiller" />
+
+    <ImageView
+        android:id="@+id/card_equip5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_equip6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_equip4"
+        app:layout_constraintTop_toBottomOf="@+id/equip_label"
+        app:srcCompat="@drawable/awoken_machinekiller" />
+
+    <ImageView
+        android:id="@+id/card_equip6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_equip7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_equip5"
+        app:layout_constraintTop_toBottomOf="@+id/equip_label"
+        app:srcCompat="@drawable/awoken_balancedkiller" />
+
+    <ImageView
+        android:id="@+id/card_equip7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_equip8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_equip6"
+        app:layout_constraintTop_toBottomOf="@+id/equip_label"
+        app:srcCompat="@drawable/awoken_attackerkiller" />
+
+    <ImageView
+        android:id="@+id/card_equip8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_equip9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_equip7"
+        app:layout_constraintTop_toBottomOf="@+id/equip_label"
+        app:srcCompat="@drawable/awoken_physicalkiller" />
+
+    <ImageView
+        android:id="@+id/card_equip9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/card_equip8"
+        app:layout_constraintTop_toBottomOf="@+id/equip_label"
+        app:srcCompat="@drawable/awoken_healerkiller" />
+
+    <EditText
+        android:id="@+id/card_hp_plus"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/control_border"
+        android:digits="1234567890"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="99" />
+
+    <EditText
+        android:id="@+id/card_atk_plus"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/control_border"
+        android:digits="1234567890"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:maxLines="1"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/card_hp_plus"
+        tools:text="99" />
+
+    <EditText
+        android:id="@+id/card_rcv_plus"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/control_border"
+        android:digits="1234567890"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/card_atk_plus" />
+
+    <EditText
+        android:id="@+id/card_level"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/control_border"
+        android:digits="1234567890"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <CheckBox
+        android:id="@+id/card_inherit_powerup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="onAssist297Click"
+        android:text="@string/desc_powerupmax"
+        app:layout_constraintStart_toStartOf="@+id/card_inherit_thumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/card_inherit_thumbnail" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/desc_level_short"
+        app:layout_constraintStart_toStartOf="@+id/card_inherit_powerup"
+        app:layout_constraintTop_toBottomOf="@+id/card_inherit_powerup" />
+
+    <EditText
+        android:id="@+id/card_inherit_level"
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/control_border"
+        android:digits="1234567890"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/card_inherit_powerup" />
+
+    <EditText
+        android:id="@+id/card_skill_level"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/control_border"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/card_skill_label"
+        app:layout_constraintTop_toTopOf="@+id/card_skill_label" />
+
+    <TextView
+        android:id="@+id/card_skill_max_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/desc_max"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/card_skill_level"
+        app:layout_constraintTop_toTopOf="@+id/card_skill_label" />
+
+    <TextView
+        android:id="@+id/card_skill_level_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/card_skill_max_label"
+        app:layout_constraintTop_toTopOf="@+id/card_skill_label"
+        tools:text="99" />
+
+    <TextView
+        android:id="@+id/card_skill_turns_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/desc_turns"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/card_skill_level_max"
+        app:layout_constraintTop_toTopOf="@+id/card_skill_label" />
+
+    <TextView
+        android:id="@+id/card_skill_turns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/card_skill_turns_label"
+        app:layout_constraintTop_toTopOf="@+id/card_skill_label"
+        tools:text="99" />
+
+    <TextView
+        android:id="@+id/card_skill_label_inherit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/name_inheritskilllevel"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_active_description" />
+
+    <EditText
+        android:id="@+id/card_skill_level_inherit"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/control_border"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/card_skill_label_inherit"
+        app:layout_constraintTop_toTopOf="@+id/card_skill_label_inherit" />
+
+    <TextView
+        android:id="@+id/card_skill_max_label_inherit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/desc_max"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/card_skill_level_inherit"
+        app:layout_constraintTop_toTopOf="@+id/card_skill_label_inherit" />
+
+    <TextView
+        android:id="@+id/card_skill_level_max_inherit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/card_skill_max_label_inherit"
+        app:layout_constraintTop_toTopOf="@+id/card_skill_label_inherit"
+        tools:text="99" />
+
+    <TextView
+        android:id="@+id/card_skill_turns_label_inherit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/desc_turns"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/card_skill_level_max_inherit"
+        app:layout_constraintTop_toTopOf="@+id/card_skill_label_inherit" />
+
+    <TextView
+        android:id="@+id/card_skill_turns_inherit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/card_skill_turns_label_inherit"
+        app:layout_constraintTop_toTopOf="@+id/card_skill_label_inherit"
+        tools:text="99" />
+
+    <TextView
+        android:id="@+id/card_active_name_inherit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_skill_label_inherit"
+        tools:text="This Is A Cool Inherit Skill Name" />
+
+    <TextView
+        android:id="@+id/card_active_description_inherit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="I don't know what this skill does but it's really op and everything and just makes everything die tbh and this is really long"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_active_name_inherit" />
+
+</android.support.constraint.ConstraintLayout>

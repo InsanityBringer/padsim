@@ -1,0 +1,22 @@
+#version 300 es
+layout(location=0) in vec4 position;
+layout(location=1) in vec2 uv;
+
+smooth out highp vec2 UVCoord;
+
+uniform vec3 offset;
+uniform mat4 projectionMatrix;
+uniform mat4 rotation;
+uniform vec2 scale;
+
+void main()
+{
+    vec4 cameraPos = position;
+	//vec4 cameraPos = vec4(norm, 1.0);
+	cameraPos *= vec4(scale.xy, 1.0, 1.0);
+    //cameraPos *= rotation;
+    cameraPos += vec4(offset.x, offset.y, offset.z, 0.0);
+    
+    gl_Position = projectionMatrix * cameraPos;
+	UVCoord = uv;
+}

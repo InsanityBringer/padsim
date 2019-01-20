@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array
+        name="latent_drawable_array">
+        <item>@drawable/latent_none</item>
+        <item>@drawable/latent_hp</item>
+        <item>@drawable/latent_atk</item>
+        <item>@drawable/latent_rcv</item>
+        <item>@drawable/latent_timeextend</item>
+        <item>@drawable/latent_autoheal</item>
+        <item>@drawable/latent_resistfire</item>
+        <item>@drawable/latent_resistwater</item>
+        <item>@drawable/latent_resistwood</item>
+        <item>@drawable/latent_resistlight</item>
+        <item>@drawable/latent_resistdark</item>
+        <item>@drawable/latent_sdr</item>
+        <item>@drawable/latent_double_stats</item>
+        <item>@drawable/latent_double_evokiller</item>
+        <item>@drawable/latent_double_awokenkiller</item>
+        <item>@drawable/latent_double_enkiller</item>
+        <item>@drawable/latent_double_rkiller</item>
+        <item>@drawable/latent_double_gkiller</item>
+        <item>@drawable/latent_double_dkiller</item>
+        <item>@drawable/latent_double_devkiller</item>
+        <item>@drawable/latent_double_mkiller</item>
+        <item>@drawable/latent_double_bkiller</item>
+        <item>@drawable/latent_double_akiller</item>
+        <item>@drawable/latent_double_pkiller</item>
+        <item>@drawable/latent_double_hkiller</item>
+        <item>@drawable/latent_double_hp</item>
+        <item>@drawable/latent_double_atk</item>
+        <item>@drawable/latent_double_rcv</item>
+        <item>@drawable/latent_double_timeextend</item>
+        <item>@drawable/latent_double_resistfire</item>
+        <item>@drawable/latent_double_resistwater</item>
+        <item>@drawable/latent_double_resistwood</item>
+        <item>@drawable/latent_double_resistlight</item>
+        <item>@drawable/latent_double_resistdark</item>
+    </array>
+    <array name="latent_drawable_array_single"
+        >
+        <item>@drawable/latent_none</item>
+        <item>@drawable/latent_hp</item>
+        <item>@drawable/latent_atk</item>
+        <item>@drawable/latent_rcv</item>
+        <item>@drawable/latent_timeextend</item>
+        <item>@drawable/latent_autoheal</item>
+        <item>@drawable/latent_resistfire</item>
+        <item>@drawable/latent_resistwater</item>
+        <item>@drawable/latent_resistwood</item>
+        <item>@drawable/latent_resistlight</item>
+        <item>@drawable/latent_resistdark</item>
+        <item>@drawable/latent_sdr</item>
+    </array>
+</resources>

@@ -1,0 +1,20 @@
+#version 300 es
+
+uniform sampler2D surfaceTexture;
+uniform highp float alpha;
+uniform highp vec3 colorMultiplier;
+
+in highp vec2 UVCoord;
+
+out highp vec4 color;
+
+void main()
+{
+	//what an amazingly boring program
+	color = texture(surfaceTexture, UVCoord) * vec4(colorMultiplier, 1.0);
+	//color = vec4(vec3(1.0, 1.0, 1.0) - color.rgb, color.a);
+	//color += vec4(1.0, 0.0, 0.0, 1.0) * (1 - color.a);
+	color.a *= alpha;
+	//color = vec4(1.0, 0.0, 0.0, 1.0);
+	//color = vec4(UVCoord.x, UVCoord.y, 0.0, 1.0);
+}

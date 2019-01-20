@@ -1,0 +1,57 @@
+﻿#version 300
+
+layout(location=0) in vec4 position;
+layout(location=1) in vec2 uv;
+
+out VS_OUT
+{
+	vec2 UVCoord;
+	vec2 UVCoord2;
+	vec2 UVCoord3;
+} VSOut;
+
+uniform vec3 offset;
+uniform mat4 projectionMatrix;
+//uniform mat4 rotation;
+uniform mat4 scale;
+uniform int id;
+uniform int attribute1;
+uniform int attribute2;
+
+void main()
+{
+    vec4 cameraPos = position;
+	//vec4 cameraPos = vec4(norm, 1.0);
+	cameraPos *= scale;
+    cameraPos *= rotation;
+    cameraPos += vec4(offset.x, offset.y, offset.z, 0.0);
+
+	int xpos = id % 10;
+	int ypos = id / 10;
+
+	float xposf = xpos / 9.0f;
+	float yposf = ypos / 9.0f;
+
+	vec2 bgpos = vec2((xposf * 918.0f / 1024.0) + (uv.x * (100.0 / 1024.0)), (yposf * 918.0f / 1024.0) + (uv.y * (100.0 / 1024.0)));
+
+	xpos = attribute1;
+	ypos = 0;
+
+	vec2 fg1pos = vec2((xpos * 102.0 / 512.0) + (uv.x * (100.0 / 512.0)), ypos * 102.0 / 256.0 + (uv.y * (100.0 / 256.0)));
+
+	vec2 fg2pos;
+	xpos = attribute2;
+	if (attribute2 < 0)
+	{
+		fg2pos = vec2(0.0, 0.0);
+	}
+	else
+	{
+		fg2pos = vec2((xpos * 102.0 / 512.0) + (uv.x * (100.0 / 512.0)), 104.0 / 256.0 + (uv.y * (100.0 / 256.0)));
+	}
+    
+    gl_Position = projectionMatrix * cameraPos;
+	VSOut.UVCoord = bgpos;
+	VSOut.UVCoord2 = fg1pos;
+	VSOut.UVCoord3 = fg2pos;
+}

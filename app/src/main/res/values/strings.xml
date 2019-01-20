@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">PadSim</string>
+    <string name="label_edit_team">Current Team</string>
+    <string name="desc_fire_damage">Team fire damage</string>
+    <string name="desc_water_damage">Team water damage</string>
+    <string name="desc_wood_damage">Team wood damage</string>
+    <string name="desc_light_damage">Team light damage</string>
+    <string name="desc_dark_damage">Team dark damage</string>
+    <string name="desc_heal">Team recovery</string>
+    <string name="desc_awoken_skillboost">Number of skill boost awokens</string>
+    <string name="desc_awoken_timeextend">Amount of time extension in seconds</string>
+    <string name="desc_awoken_multiboost">Number of multi boost awokens</string>
+    <string name="desc_awoken_twoprongs">Number of two pronged attack awokens</string>
+    <string name="desc_awoken_7c">Number of 7 combo awokens</string>
+    <string name="desc_awoken_10c">Number of 10 combo awokens</string>
+    <string name="desc_teammate_icon">Icon of the team member</string>
+    <string name="title_pick_latent">Select a latent skill</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ui_loading">Now loading...</string>
+    <string name="name_level">Level:</string>
+    <string name="name_skilllevel">Skill Level:</string>
+    <string name="name_latents">Latent Awokens:</string>
+    <string name="name_assist">Assist:</string>
+    <string name="name_superawoken">Super Awoken:</string>
+    <string name="name_equipawokens">Equipped Awokens:</string>
+    <string name="hint_monstersearch">Find a monster by name or ID...</string>
+    <string name="desc_team1">Player 1\'s team</string>
+    <string name="desc_team2">Player 2\'s team</string>
+    <string name="desc_team3">Player 3\'s team</string>
+    <string name="desc_powerupmax">+297</string>
+    <string name="desc_level_short">LV</string>
+    <string name="desc_max">Max:</string>
+    <string name="desc_turns">Turns:</string>
+    <string name="name_inheritskilllevel">Inherit Level:</string>
+</resources>

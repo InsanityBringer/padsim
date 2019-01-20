@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_fire_damage"
+            app:srcCompat="@drawable/attr_fire" />
+
+        <TextView
+            android:id="@+id/text_firedmg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:autoSizeTextType="uniform"
+            tools:text="88888" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_water_damage"
+            app:srcCompat="@drawable/attr_water" />
+
+        <TextView
+            android:id="@+id/text_waterdmg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="88888" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_wood_damage"
+            app:srcCompat="@drawable/attr_wood" />
+
+        <TextView
+            android:id="@+id/text_wooddmg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="88888" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_light_damage"
+            app:srcCompat="@drawable/attr_light" />
+
+        <TextView
+            android:id="@+id/text_lightdmg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="88888" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_dark_damage"
+            app:srcCompat="@drawable/attr_dark" />
+
+        <TextView
+            android:id="@+id/text_darkdmg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="88888" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_heal"
+            app:srcCompat="@drawable/attr_heal" />
+
+        <TextView
+            android:id="@+id/text_recovery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99999" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_skillboost"
+            app:srcCompat="@drawable/awoken_skillboost" />
+
+        <TextView
+            android:id="@+id/text_skillboosts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_timeextend"
+            app:srcCompat="@drawable/awoken_timeextend" />
+
+        <TextView
+            android:id="@+id/text_timeextends"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99.5"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99.5" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_multiboost"
+            app:srcCompat="@drawable/awoken_multiboost" />
+
+        <TextView
+            android:id="@+id/text_multiboost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_twoprongs"
+            app:srcCompat="@drawable/awoken_twoprongattack" />
+
+        <TextView
+            android:id="@+id/text_prongs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_7c"
+            app:srcCompat="@drawable/awoken_7c" />
+
+        <TextView
+            android:id="@+id/text_7c"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_10c"
+            app:srcCompat="@drawable/awoken_10c" />
+
+        <TextView
+            android:id="@+id/text_10c"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_twoprongs"
+            app:srcCompat="@drawable/awoken_enhancedfire" />
+
+        <TextView
+            android:id="@+id/text_fireoe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_7c"
+            app:srcCompat="@drawable/awoken_enhancedwater" />
+
+        <TextView
+            android:id="@+id/text_wateroe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_10c"
+            app:srcCompat="@drawable/awoken_enhancedwood" />
+
+        <TextView
+            android:id="@+id/text_woodoe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_twoprongs"
+            app:srcCompat="@drawable/awoken_enhancedlight" />
+
+        <TextView
+            android:id="@+id/text_lightoe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_7c"
+            app:srcCompat="@drawable/awoken_enhanceddark" />
+
+        <TextView
+            android:id="@+id/text_darkoe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_10c"
+            app:srcCompat="@drawable/awoken_enhancedheal" />
+
+        <TextView
+            android:id="@+id/text_healoe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_twoprongs"
+            app:srcCompat="@drawable/awoken_rowfire" />
+
+        <TextView
+            android:id="@+id/text_firerow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_7c"
+            app:srcCompat="@drawable/awoken_rowwater" />
+
+        <TextView
+            android:id="@+id/text_waterrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_10c"
+            app:srcCompat="@drawable/awoken_rowwood" />
+
+        <TextView
+            android:id="@+id/text_woodrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_twoprongs"
+            app:srcCompat="@drawable/awoken_rowlight" />
+
+        <TextView
+            android:id="@+id/text_lightrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView38"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_7c"
+            app:srcCompat="@drawable/awoken_rowdark" />
+
+        <TextView
+            android:id="@+id/text_darkrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_10c"
+            app:srcCompat="@drawable/awoken_vdp" />
+
+        <TextView
+            android:id="@+id/text_vdp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_twoprongs"
+            app:srcCompat="@drawable/awoken_latk" />
+
+        <TextView
+            android:id="@+id/text_lattack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_7c"
+            app:srcCompat="@drawable/awoken_highhpboost" />
+
+        <TextView
+            android:id="@+id/text_highhp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_10c"
+            app:srcCompat="@drawable/awoken_lowhpboost" />
+
+        <TextView
+            android:id="@+id/text_lowhp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_twoprongs"
+            app:srcCompat="@drawable/awoken_ldef" />
+
+        <TextView
+            android:id="@+id/text_ldef"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_7c"
+            app:srcCompat="@drawable/awoken_fua" />
+
+        <TextView
+            android:id="@+id/text_fua"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_10c"
+            app:srcCompat="@drawable/awoken_turbofua" />
+
+        <TextView
+            android:id="@+id/text_sfua"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_twoprongs"
+            app:srcCompat="@drawable/awoken_dragonkiller" />
+
+        <TextView
+            android:id="@+id/text_dkiller"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_7c"
+            app:srcCompat="@drawable/awoken_devilkiller" />
+
+        <TextView
+            android:id="@+id/text_devkiller"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_10c"
+            app:srcCompat="@drawable/awoken_machinekiller" />
+
+        <TextView
+            android:id="@+id/text_mkiller"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_twoprongs"
+            app:srcCompat="@drawable/awoken_godkiller" />
+
+        <TextView
+            android:id="@+id/text_gkiller"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_7c"
+            app:srcCompat="@drawable/awoken_attackerkiller" />
+
+        <TextView
+            android:id="@+id/text_akiller"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_10c"
+            app:srcCompat="@drawable/awoken_physicalkiller" />
+
+        <TextView
+            android:id="@+id/text_pkiller"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_twoprongs"
+            app:srcCompat="@drawable/awoken_healerkiller" />
+
+        <TextView
+            android:id="@+id/text_hkiller"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_7c"
+            app:srcCompat="@drawable/awoken_balancedkiller" />
+
+        <TextView
+            android:id="@+id/text_bkiller"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_10c"
+            app:srcCompat="@drawable/awoken_recoverbind" />
+
+        <TextView
+            android:id="@+id/text_recoverbind"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <ImageView
+            android:id="@+id/imageView40"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_twoprongs"
+            app:srcCompat="@drawable/awoken_resistjammer" />
+
+        <TextView
+            android:id="@+id/text_jresist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="3"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_7c"
+            app:srcCompat="@drawable/awoken_resistpoison" />
+
+        <TextView
+            android:id="@+id/text_presist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="4"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+
+        <ImageView
+            android:id="@+id/imageView42"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="5"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:contentDescription="@string/desc_awoken_10c"
+            app:srcCompat="@drawable/awoken_resistblind" />
+
+        <TextView
+            android:id="@+id/text_bresist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_column="6"
+            android:layout_weight="1"
+            android:background="@drawable/control_border"
+            android:text="99"
+            android:textAlignment="center"
+            app:autoSizeTextType="uniform"
+            tools:text="99" />
+    </LinearLayout>
+
+</TableLayout>

@@ -1,0 +1,29 @@
+﻿#version 300
+
+uniform sampler2D frameTexture;
+uniform sampler2D cardsTexture;
+uniform float alpha;
+
+in VS_OUT
+{
+	vec2 UVCoord;
+	vec2 UVCoord2;
+	vec2 UVCoord3;
+} FSIn;
+
+out vec4 color;
+
+void main()
+{
+	
+	vec4 color1 = texture(frameTexture, FSIn.UVCoord2);
+	vec4 color2 = texture(cardsTexture, FSIn.UVCoord);
+	vec4 color3 = texture(frameTexture, FSIn.UVCoord3);
+	//color1 = vec4(1.0, 1.0, 1.0, 0.0);
+
+	color = vec4(color2.rgb * (1.0 - color1.a) + color1.rgb * color1.a, max(color1.a, color2.a));
+	color = vec4(color.rgb * (1.0 - color3.a) + color3.rgb * color3.a, max(color3.a, color.a));
+	//color = color1;
+	color.a *= alpha;
+	//color = vec4(1.0, 0.0, 0.0, 1.0);
+}

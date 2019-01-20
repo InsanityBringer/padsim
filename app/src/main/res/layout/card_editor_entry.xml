@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/teammate_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/desc_teammate_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@drawable/blank_card" />
+
+    <TextView
+        android:id="@+id/teammate_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:maxLines="1"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/teammate_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1234: Teammate Name" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="171dp" />
+
+    <ImageView
+        android:id="@+id/type1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/type2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/teammate_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/teammate_name"
+        app:srcCompat="@drawable/type_balanced"
+        tools:srcCompat="@drawable/type_balanced" />
+
+    <ImageView
+        android:id="@+id/type2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/type3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/type1"
+        app:layout_constraintTop_toBottomOf="@+id/teammate_name"
+        app:srcCompat="@drawable/type_balanced"
+        tools:srcCompat="@drawable/type_balanced" />
+
+    <ImageView
+        android:id="@+id/type3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/type2"
+        app:layout_constraintTop_toBottomOf="@+id/teammate_name"
+        app:srcCompat="@drawable/type_balanced"
+        tools:srcCompat="@drawable/type_balanced" />
+
+    <ImageView
+        android:id="@+id/awoken1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/awoken2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/teammate_name"
+        app:srcCompat="@drawable/awoken_multiboost" />
+
+    <ImageView
+        android:id="@+id/awoken2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/awoken3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/awoken1"
+        app:layout_constraintTop_toBottomOf="@+id/teammate_name"
+        app:srcCompat="@drawable/awoken_twoprongattack" />
+
+    <ImageView
+        android:id="@+id/awoken3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/awoken4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/awoken2"
+        app:layout_constraintTop_toBottomOf="@+id/teammate_name"
+        app:srcCompat="@drawable/awoken_turbofua" />
+
+    <ImageView
+        android:id="@+id/awoken4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/awoken5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/awoken3"
+        app:layout_constraintTop_toBottomOf="@+id/teammate_name"
+        app:srcCompat="@drawable/awoken_timeextend" />
+
+    <ImageView
+        android:id="@+id/awoken5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/awoken6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/awoken4"
+        app:layout_constraintTop_toBottomOf="@+id/teammate_name"
+        app:srcCompat="@drawable/awoken_skillboost" />
+
+    <ImageView
+        android:id="@+id/awoken6"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/awoken7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/awoken5"
+        app:layout_constraintTop_toBottomOf="@+id/teammate_name"
+        app:srcCompat="@drawable/awoken_resistjammer" />
+
+    <ImageView
+        android:id="@+id/awoken7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/awoken8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/awoken6"
+        app:layout_constraintTop_toBottomOf="@+id/teammate_name"
+        app:srcCompat="@drawable/awoken_recoverbind" />
+
+    <ImageView
+        android:id="@+id/awoken8"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/awoken9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/awoken7"
+        app:layout_constraintTop_toBottomOf="@+id/teammate_name"
+        app:srcCompat="@drawable/awoken_7c" />
+
+    <ImageView
+        android:id="@+id/awoken9"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/awoken8"
+        app:layout_constraintTop_toBottomOf="@+id/teammate_name"
+        app:srcCompat="@drawable/awoken_vdp" />
+
+    <TextView
+        android:id="@+id/teammate_stats"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/teammate_image_view"
+        tools:text="HP: 4567 ATK: 2345 RCV: 1234" />
+
+    <ImageView
+        android:id="@+id/latent1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/teammate_stats"
+        app:layout_constraintEnd_toStartOf="@+id/latent2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/teammate_image_view"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:srcCompat="@drawable/latent_autoheal" />
+
+    <ImageView
+        android:id="@+id/latent2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/teammate_stats"
+        app:layout_constraintEnd_toStartOf="@+id/latent3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/latent1"
+        app:srcCompat="@drawable/latent_sdr" />
+
+    <ImageView
+        android:id="@+id/latent3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/teammate_stats"
+        app:layout_constraintEnd_toStartOf="@+id/latent4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/latent2"
+        app:srcCompat="@drawable/latent_sdr" />
+
+    <ImageView
+        android:id="@+id/latent4"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/teammate_stats"
+        app:layout_constraintEnd_toStartOf="@+id/latent5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/latent3"
+        app:srcCompat="@drawable/latent_autoheal" />
+
+    <ImageView
+        android:id="@+id/latent5"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/teammate_stats"
+        app:layout_constraintEnd_toStartOf="@+id/latent6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/latent4"
+        app:srcCompat="@drawable/latent_hp" />
+
+    <ImageView
+        android:id="@+id/latent6"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/teammate_stats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/latent5"
+        app:srcCompat="@drawable/latent_none" />
+
+    <ImageView
+        android:id="@+id/assist_image_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/teammate_image_view"
+        app:srcCompat="@drawable/blank_card" />
+
+    <ImageView
+        android:id="@+id/awoken_super"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/teammate_stats"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/teammate_image_view"
+        app:srcCompat="@drawable/latent_none" />
+
+</android.support.constraint.ConstraintLayout>
