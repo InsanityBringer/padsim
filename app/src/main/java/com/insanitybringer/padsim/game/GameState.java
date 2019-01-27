@@ -45,7 +45,7 @@ public class GameState
     private List<Effect> effects;
     private List<DamageNumber> numbers;
     private List<Match> matches;
-    private Random random = new Random();
+    public Random random = new Random();
     private int gameControlLock = 0; //Gameblock is a counter. When gameBlock is 0, the game can progress to the next phase
     //When gameBlock is not zero, the game cannot move forward. Things can ask to increment or decrement it
     public int turnFlags = 0; //Set to determine what is done when gameControlLock is 0
