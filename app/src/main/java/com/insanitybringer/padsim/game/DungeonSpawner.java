@@ -42,13 +42,13 @@ public class DungeonSpawner
             int weightListIndex = 0;
             for (int i = 0; i < subPools.size(); i++)
             {
-                for (int w = 0; w < subPools.get(i).weight; i++)
+                for (int w = 0; w < subPools.get(i).weight; w++)
                     weightList[weightListIndex++] = -i;
             }
 
             for (int i = 0; i < spawns.size(); i++)
             {
-                for (int w = 0; w < spawns.get(i).weight; i++)
+                for (int w = 0; w < spawns.get(i).weight; w++)
                     weightList[weightListIndex++] = i;
             }
         }
