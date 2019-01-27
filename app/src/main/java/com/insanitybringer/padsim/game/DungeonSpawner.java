@@ -25,6 +25,7 @@ public class DungeonSpawner
         //This pool's weight, for nested pools
         public int weight;
         //How many rolls to make for this particular spawn
+        //If numRolls is <0, instead add all subpools and spawns to the enemy list
         public int numRolls;
 
         public ArrayList<SpawnPool> subPools = new ArrayList<>();
@@ -55,17 +56,31 @@ public class DungeonSpawner
 
         public void addSpawns(GameState gameState, ArrayList<Enemy> enemies)
         {
-            for (int roll = 0; roll < numRolls; roll++)
+            if (numRolls < 0) //Handle fixed formation encounters
             {
-                int id = gameState.random.nextInt(weightList.length);
-                int spawnid = weightList[id];
-                if (spawnid < 0)
+                for (int i = 0; i < subPools.size(); i++)
                 {
-                    subPools.get(-spawnid).addSpawns(gameState, enemies);
+                    subPools.get(i).addSpawns(gameState, enemies);
                 }
-                else
+
+                for (int i = 0; i < spawns.size(); i++)
                 {
-                    enemies.add(spawns.get(id).generateEnemy(gameState));
+                    spawns.get(i).generateEnemy(gameState);
+                }
+            }
+            else
+            {
+                for (int roll = 0; roll < numRolls; roll++)
+                {
+                    int id = gameState.random.nextInt(weightList.length);
+                    int spawnid = weightList[id];
+                    if (spawnid < 0)
+                    {
+                        subPools.get(-spawnid).addSpawns(gameState, enemies);
+                    } else
+                    {
+                        enemies.add(spawns.get(id).generateEnemy(gameState));
+                    }
                 }
             }
         }
