@@ -79,7 +79,7 @@ public class DungeonSpawner
                         subPools.get(-spawnid).addSpawns(gameState, enemies);
                     } else
                     {
-                        enemies.add(spawns.get(id).generateEnemy(gameState));
+                        enemies.add(spawns.get(spawnid).generateEnemy(gameState));
                     }
                 }
             }
