@@ -1,8 +1,12 @@
 package com.insanitybringer.padsim.game;
 
 import java.util.ArrayList;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 
-public class DungeonSpawner
+public class Dungeon
 {
     private class SpawnInfo
     {
@@ -12,6 +16,13 @@ public class DungeonSpawner
         public short level;
         //The weight of this encounter to spawn vs. others
         public int weight;
+
+        public SpawnInfo(JsonObject spawnInfo, int weight)
+        {
+            id = spawnInfo.get("id").getAsShort();
+            level = spawnInfo.get("level").getAsShort();
+            this.weight = weight; //Already extracted earlier in the pipeline
+        }
 
         //i really need to stop passing around gamestate everywhere aaa
         public Enemy generateEnemy(GameState gameState)
@@ -30,12 +41,43 @@ public class DungeonSpawner
 
         public ArrayList<SpawnPool> subPools = new ArrayList<>();
         public ArrayList<SpawnInfo> spawns = new ArrayList<>();
-        //TODO: Investagate better ways of weighted spawn
         private int totalWeight;
         private int[] weightList; //Contains IDs into the subPools list and the spawns list,
                                 // + is spawn, - is sub pool
 
-        //TODO: parsing
+        //TODO: Investigate whether or not GSON's reflection based automatic deserialization
+        //can work here. It would probably require some modifications to the way data is stored
+        //in my dungeon JSON files, but overall should be possible and might be faster?
+        public SpawnPool(JsonObject pool, int weight)
+        {
+            //weight = pool.get("weight").getAsInt();
+            this.weight = weight;
+            numRolls = pool.get("numRolls").getAsInt();
+            JsonArray poolContents = pool.get("contents").getAsJsonArray();
+            JsonObject content; String type; int spawnWeight;
+            for (JsonElement elem : poolContents)
+            {
+                content = elem.getAsJsonObject();
+                type = content.get("type").getAsString();
+                spawnWeight = content.get("weight").getAsInt();
+                //ew
+                if (type.compareTo("spawn") == 0)
+                {
+                    spawns.add(new SpawnInfo(content, spawnWeight));
+                }
+                else if (type.compareTo("pool") == 0)
+                {
+                    subPools.add(new SpawnPool(pool, spawnWeight));
+                }
+                else
+                {
+                    System.err.printf("Unknown type %s found when parsing spawn pool contents", type);
+                }
+                totalWeight += spawnWeight;
+            }
+
+            buildWeightList();
+        }
 
         public void buildWeightList()
         {
